@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather-app</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="css/weather-icons-wind.css">
+    <link rel="stylesheet" href="css/weather-icons-wind.min.css">
+    <link rel="stylesheet" href="css/weather-icons.css">
+    <link rel="stylesheet" href="css/weather-icons.min.css">
+</head>
+<body>
+    <div class="background">
+        
+        <div class="left-side">
+            <div class="left-top">
+                <i class="wi wi-fog" ></i>
+                <p id="weather-type">Fog</p>
+                <p id="place">New Delhi</p>
+                <p id="temp">28'C</p>
+            </div>
+            <div class="location">
+                <i class="fas fa-map-marker-alt" class="location-icon"></i>
+                <span>Change Location</span>
+            </div>
+        </div>
+        <div class="center">
+            <!-- This will left empty -->
+        </div>
+        <div class="right-side">
+            <div id="humidity" class="info">
+                <div class="info-heading">
+                    <i class="wi wi-sprinkle"> </i>
+                    <span>Humidity</span>
+                </div>
+                
+                <p class="value">50%</p>
+            </div>
+            <div id="air-pressure" class="info">
+                <div class="info-heading">
+                    <i class="wi wi-cloudy-gusts"> </i>
+                    <span>Air Pressure</span>
+                </div>
+                <p class="value">1009.467 PS</p>
+            </div>
+            <div id="chance-of-rain" class="info">
+                <div class="info-heading">
+                    <i class="wi wi-showers"> </i>
+                    <span>Chance of Rain</span>
+                </div>
+                <p class="value">0%</p>
+            </div>
+            <div id="wind-speed" class="info">
+                <div class="info-heading">
+                    <i class="wi wi-strong-wind"> </i>
+                    <span>Wind Speed</span>
+                </div>
+                <p class="value">1.4 Km/h</p>
+            </div>
+        </div>
+        <div class="bottom">
+            <div class="day">
+                <i class="fa-light fa-less-than"></i>
+                <span>Monday</span>
+            </div>
+            <div class="temp-time">
+                <div class="time">
+                    <p class="box-time"><span>3PM</span></p>
+                    <p class="box-temp"><span>28'C</span></p>
+                    <p class="feel-temp"><span>Feel like 30'C</span></p>
+                </div>
+                <div class="time">
+                    <p class="box-time"><span>3PM</span></p>
+                    <p class="box-temp"><span>28'C</span></p>
+                    <p class="feel-temp"><span>Feel like 30'C</span></p>
+                </div>
+                <div class="time">
+                    <p class="box-time"><span>3PM</span></p>
+                    <p class="box-temp"><span>28'C</span></p>
+                    <p class="feel-temp"><span>Feel like 30'C</span></p>
+                </div>
+                <div class="time">
+                    <p class="box-time"><span>3PM</span></p>
+                    <p class="box-temp"><span>28'C</span></p>
+                    <p class="feel-temp"><span>Feel like 30'C</span></p>
+                </div>
+                <div class="time">
+                    <p class="box-time"><span>3PM</span></p>
+                    <p class="box-temp"><span>28'C</span></p>
+                    <p class="feel-temp"><span>Feel like 30'C</span></p>
+                </div>
+                <div class="time">
+                    <p class="box-time"><span>3PM</span></p>
+                    <p class="box-temp"><span>28'C</span></p>
+                    <p class="feel-temp"><span>Feel like 30'C</span></p>
+                </div>
+                <div class="time">
+                    <p class="box-time"><span>3PM</span></p>
+                    <p class="box-temp"><span>28'C</span></p>
+                    <p class="feel-temp"><span>Feel like 30'C</span></p>
+                </div>
+                <div class="arrow-div">
+                    <button>
+                        <span class="arrow"><i class="fa-solid fa-less-than"></i></span>
+                    </button>
+                    <button>
+                        <span class="arrow"><i class="fa-solid fa-greater-than"></i></span>
+                    </button>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

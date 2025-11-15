@@ -1,0 +1,180 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: #fff;
+    font-family: "Poppins", sans-serif;
+    /* font-weight: 400; */
+    font-style: normal;
+}
+
+.background{
+    position: relative;
+    z-index: 0;
+    background-image: url(image/background4.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    background-position: center center;
+    display: grid;
+    grid-template-columns: 1fr 3fr 1fr;
+    grid-template-rows: 1.5fr 1fr;
+}
+
+.background::before{
+    content: "";
+    position: absolute;
+    top: 0; left: 0; right: 0; bottom: 0;
+    background-color: rgba(0 , 0 , 0 , 0.5);
+    z-index: 1;
+}
+
+.left-side{
+    z-index: 2;
+    margin-top: 1rem;
+    margin-left: 1rem;
+}
+
+.left-side .left-top i{
+    margin-top: 1rem;
+    margin-left: 1rem;
+    font-size: 2.7rem;
+}
+.left-side .left-top #weather-type{
+    margin-top: 0.2rem;
+    margin-left: 1rem;
+    font-size: 2.2rem;
+}
+.left-side .left-top #place{
+    margin-left: 1rem;
+    font-size: 0.8rem;
+}
+.left-side .left-top #temp{
+    margin-left: 1.2rem;
+    font-size: 2.7rem;
+    font-weight: 800;
+}
+
+.left-side .location{
+    padding-top: 0.2rem;
+    padding-left: 1.2rem;
+    font-size: xx-small;
+}
+
+.center{
+    z-index: 2;
+    
+}
+
+.right-side{
+    z-index: 2;
+    padding: 1.4rem;
+    padding-right: 0;
+}
+
+.right-side .info{
+    margin: 0.9rem;
+    margin-right: 0;
+}
+
+.right-side .info .info-heading{
+    opacity: 0.6;
+}
+
+.right-side .info i{
+    margin-right: 0.4rem;
+    font-size: 1rem;
+}
+
+.right-side .info .value{
+    margin-top: 0.3rem;
+    margin-left: 2rem;
+    font-size: 1rem;
+}
+
+.bottom{
+    /* background-color: rgba(255, 192, 203 , 0.4); */
+    z-index: 2;
+    grid-column: span 3;
+}
+
+.bottom .day{
+    margin-left: 2rem;
+    margin-top: 2rem;
+    font-size: 0.8rem;
+}
+
+.bottom .day span{
+    font-size: 0.8rem;
+}
+/* .bottom .temp-time {
+    display: flex;
+    justify-content: space-around;
+    position: relative;
+} */
+
+.bottom .temp-time {
+    display: flex;
+    flex-direction: row;     
+    align-items: flex-end;    
+    justify-content:space-evenly; 
+    position: relative;       
+    gap: 1rem;               
+}
+
+.bottom .temp-time .time{
+    /* background-color: rgba(255, 192, 203 , 0.4); */
+    width: 8rem;
+    height: 8rem;
+    margin-top: 2rem;
+    transition: transform 0.2s ease-out;
+
+}
+.bottom .temp-time .time:hover{
+    transform: scale(1.1);
+}
+
+.bottom .temp-time .time .box-time{
+    padding-left: 0.8rem;
+    padding-top: 1rem;
+    padding-bottom: 1.7rem;
+    font-size: 0.6rem;
+}
+
+.bottom .temp-time .time .box-temp{
+    font-size: 2rem;
+    padding-left: 1rem;
+    font-weight: 800;
+}
+
+.bottom .temp-time .time .feel-temp{
+    font-size: 0.9rem;
+    padding-left: 1rem;
+    display: none;
+    transition: transform 0.2s ease-out;
+}
+
+.bottom .temp-time .time:hover .feel-temp{
+    display: block;
+}
+
+.bottom .temp-time .arrow-div{            
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.bottom .temp-time .arrow-div button{ 
+    columns: white;
+    background-color: rgba(0 , 0 , 0 , 0.35);
+    border: none;
+    width: 40px;
+    height: 40px;           
+    border-radius: 50%;
+    transition: transform 0.2s ease-out;
+}
+
+.bottom .temp-time .arrow-div button:active{
+    transform: scale(1.1);
+}
