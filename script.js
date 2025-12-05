@@ -1,6 +1,5 @@
-const apiKey = '8cd5c913221bb2044e766567d7e6f93b';
-
 document.addEventListener('DOMContentLoaded', () => {
+    const apiKey = '8cd5c913221bb2044e766567d7e6f93b';
 	const iconEl = document.querySelector('.left-top i');
 	const weatherTypeEl = document.getElementById('weather-type');
 	const placeEl = document.getElementById('place');
