@@ -9,12 +9,10 @@ document.addEventListener('DOMContentLoaded', () => {
 	const pressureEl = document.querySelector('#air-pressure .value');
 	const rainEl = document.querySelector('#chance-of-rain .value');
 	const windEl = document.querySelector('#wind-speed .value');
-	const locationEl = document.querySelector('.location');
 
 	let city = (placeEl && placeEl.textContent.trim()) || 'New Delhi';
 	fetchWeather(city);
 
-	// Replace prompt with on-page transparent search input and button
 	const cityInput = document.getElementById('city-input');
 	const changeBtn = document.getElementById('change-btn');
 
@@ -114,7 +112,7 @@ document.addEventListener('DOMContentLoaded', () => {
 						if (feelEl) feelEl.textContent = feelText;
 					}
 
-					// Set the day name based on the first forecast entry local date
+					// day ka name set kar rahi hu 
 					if (daySpan) {
 						const firstLocal = new Date((fData.list[0].dt + cityTz) * 1000);
 						const weekday = ['Sunday','Monday','Tuesday','Wednesday','Thursday','Friday','Saturday'][firstLocal.getUTCDay()];
@@ -134,7 +132,7 @@ document.addEventListener('DOMContentLoaded', () => {
 	function capitalize(s) { return s ? s.charAt(0).toUpperCase() + s.slice(1) : ''; }
 
 	function mapToIconClass(id, main) {
-		// Map OpenWeather weather id ranges to weather-icons classes
+		// yaha icon change kiya hai 
 		if (typeof id === 'number') {
 			if (id >= 200 && id < 300) return 'wi-thunderstorm';
 			if (id >= 300 && id < 400) return 'wi-sprinkle';
@@ -162,4 +160,3 @@ document.addEventListener('DOMContentLoaded', () => {
 	} catch (e) {}
 
 });
-
