@@ -61,6 +61,46 @@
     font-size: xx-small;
 }
 
+/* Transparent search input in the location area */
+.left-side .location{
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.left-side .location input#city-input{
+    background: rgba(255,255,255,0.06);
+    border: 1px solid rgba(255,255,255,0.12);
+    color: #fff;
+    padding: 0.25rem 0.5rem;
+    font-size: 0.85rem;
+    border-radius: 6px;
+    outline: none;
+    backdrop-filter: blur(4px);
+}
+
+.left-side .location input#city-input::placeholder{
+    color: rgba(255,255,255,0.7);
+}
+
+.left-side .location input#city-input:focus{
+    border-color: rgba(255,255,255,0.3);
+    box-shadow: 0 0 6px rgba(255,255,255,0.06);
+}
+
+.left-side .location button#change-btn{
+    background: transparent;
+    border: 1px solid rgba(255,255,255,0.12);
+    color: #fff;
+    padding: 0.2rem 0.45rem;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.left-side .location .location-icon{
+    font-size: 0.95rem;
+}
+
 .center{
     z-index: 2;
     
